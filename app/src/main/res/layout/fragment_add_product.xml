@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".store.AddProductFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:hint="Name Product">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/ETnameproduct"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/grey_nhat1"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:padding="5dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:text="Brand"
+                    android:textSize="17sp"/>
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/idRadioGrBrand"
+                    android:orientation="vertical"
+                    android:checkedButton="@id/idbrandOther">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="Vans"
+                        android:id="@+id/idbrandVans"
+                        android:layout_column="0"/>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="Nike"
+                        android:id="@+id/idbrandNike"
+                        android:layout_column="1"/>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="Balenciaga"
+                        android:id="@+id/idbrandBalenciaga"
+                        android:layout_column="0"/>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="Puma"
+                        android:id="@+id/idbrandPuma"
+                        android:layout_column="1"/>
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="Converse"
+                        android:id="@+id/idbrandConverse"
+                        android:layout_column="0"/>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="Adidas"
+                        android:id="@+id/idbrandAdidas"
+                        android:layout_column="1"/>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="New Blance"
+                        android:id="@+id/idbrandNewBlance"
+                        android:layout_column="0"/>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="Other"
+                        android:id="@+id/idbrandOther"
+                        android:layout_column="1"/>
+
+                </RadioGroup>
+
+            </LinearLayout>
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/grey"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:padding="5dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:text="Category"
+                    android:textSize="17sp"/>
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/idRadioGrCategory"
+                    android:checkedButton="@id/idcategoryOther">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Basketball"
+                        android:id="@+id/idcategoryBasketball"
+                        android:layout_column="0"/>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Boots"
+                        android:id="@+id/idcategoryBoots"
+                        android:layout_column="1"/>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Cleats"
+                        android:id="@+id/idcategoryCleats"
+                        android:layout_column="0"/>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Lifestyle"
+                        android:id="@+id/idcategoryLifestyle"
+                        android:layout_column="1"/>
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Running"
+                        android:id="@+id/idcategoryRunning"
+                        android:layout_column="0"/>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sandals"
+                        android:id="@+id/idcategorySandals"
+                        android:layout_column="1"/>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Skateboarding"
+                        android:id="@+id/idcategorySkateboarding"
+                        android:layout_column="0"/>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Other"
+                        android:id="@+id/idcategoryOther" />
+
+                </RadioGroup>
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:text="Color"
+            android:textSize="17sp"/>
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:padding="5dp"
+            android:columnCount="3">
+
+            <CheckBox
+                android:id="@+id/idCBBlack"
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:text="Black"/>
+
+            <CheckBox
+                android:id="@+id/idCBWhite"
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:text="White"/>
+            <CheckBox
+                android:id="@+id/idCBGrey"
+                android:layout_height="match_parent"
+                android:text="Grey"/>
+
+            <CheckBox
+                android:id="@+id/idCBGreen"
+                android:layout_height="match_parent"
+                android:text="Green"/>
+            <CheckBox
+                android:id="@+id/idCBBlue"
+                android:layout_height="match_parent"
+                android:text="Blue"/>
+
+            <CheckBox
+                android:id="@+id/idCBTeal"
+                android:layout_height="match_parent"
+                android:text="Teal"/>
+            <CheckBox
+                android:id="@+id/idCBYellow"
+                android:layout_height="match_parent"
+                android:text="Yellow"/>
+
+            <CheckBox
+                android:id="@+id/idCBRed"
+                android:layout_height="match_parent"
+                android:text="Red"/>
+            <CheckBox
+                android:id="@+id/idCBOrange"
+                android:layout_height="match_parent"
+                android:text="Orange"/>
+
+            <CheckBox
+                android:id="@+id/idCBBrown"
+                android:layout_height="match_parent"
+                android:text="Brown"/>
+            <CheckBox
+                android:id="@+id/idCBPurple"
+                android:layout_height="match_parent"
+                android:text="Purple"/>
+
+            <CheckBox
+                android:id="@+id/idCBMulti"
+                android:layout_height="match_parent"
+                android:text="Multi"/>
+
+        </GridLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:hint="Version">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/ETversionproduct"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/grey_nhat1"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:hint="Price"
+            app:prefixText="$"
+
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/ETpriceproduct"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/grey_nhat1"
+                android:inputType="numberDecimal"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:hint="Quantity"
+            app:suffixText="pairs"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/ETquantityproduct"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/grey_nhat1"
+                android:inputType="numberDecimal"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:hint="Detail Product "
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/ETdetailproduct"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/grey_nhat1"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/idbtnaddimage"
+                style="?attr/materialButtonOutlinedStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"
+                android:text="Add Images"
+                android:textColor="@color/black"
+                android:textAllCaps="false"
+                android:textSize="15sp"
+                app:icon="@drawable/ic_baseline_add_photo_alternate_24"
+                app:iconGravity="top" />
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/idRVImagePreview"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginEnd="5dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:layout_toEndOf="@id/idbtnaddimage"
+                android:orientation="horizontal"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                tools:listitem="@layout/image_item_createproduct"
+                />
+            <TextView
+                android:id="@+id/idclose"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/custom_position_iv"
+                android:gravity="center"
+                android:text="X"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:visibility="gone"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/idLnLBtnProg"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp"
+            android:gravity="center">
+            <Button
+                android:id="@+id/idbtnaddproduct"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Add"
+                android:textAllCaps="false"
+                />
+            <ProgressBar
+                android:id="@+id/idPB"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:indeterminateTint="@color/teal_200"
+                android:visibility="gone"
+                />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

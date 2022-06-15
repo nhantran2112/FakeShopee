@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:padding="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/idCVAva"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:cardCornerRadius="30dp"
+        android:layout_marginEnd="20dp"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:id="@+id/idIVAvaUser"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/logo"
+            android:contentDescription="TODO" />
+    </androidx.cardview.widget.CardView>
+    <TextView
+        android:id="@+id/idTVNameUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_toRightOf="@id/idCVAva"
+        android:text="Dang Hoang Viet"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        />
+    <TextView
+        android:id="@+id/idTVTimeLM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="17/06/2022 11:25:50"
+        android:textSize="11sp"/>
+
+    <TextView
+        android:id="@+id/idTVLastMess"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/idCVAva"
+        android:layout_below="@id/idTVNameUser"
+        android:text="Xin chao ban , ban muon mua mon nay phai khong a asd asd "
+        android:textSize="14sp"
+        android:maxLines="1"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey"
+        android:layout_alignParentBottom="true"
+        />
+
+
+</RelativeLayout>

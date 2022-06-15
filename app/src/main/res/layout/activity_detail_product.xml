@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".home.DetailProductActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/idLnLBtn"
+        android:layout_alignParentTop="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.example.finalprojectdv.other.MyImageSwitcher
+                android:id="@+id/idIVProduct"
+                android:layout_width="match_parent"
+                android:layout_height="250dp" />
+
+            <TextView
+                android:id="@+id/idTVPreImage"
+                android:layout_width="40dp"
+                android:layout_height="150dp"
+                android:layout_above="@id/idTVPosition"
+                android:layout_alignParentLeft="true"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                app:drawableLeftCompat="@drawable/ic_baseline_arrow_left_46"
+                android:textColor="@color/grey_nhat2"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/idTVNextImage"
+                android:layout_width="40dp"
+                android:layout_height="150dp"
+                android:layout_above="@id/idTVPosition"
+                android:layout_alignParentRight="true"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:textColor="@color/grey_nhat2"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:drawableLeftCompat="@drawable/ic_baseline_arrow_right_46" />
+
+            <TextView
+                android:id="@+id/idTVPosition"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/idTVNameSneaker"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/custom_position_iv"
+                android:gravity="center"
+                android:text="1/5"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/idTVNameSneaker"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/idIVProduct"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:padding="5dp"
+                android:text="Jordan 1 High Blue X White"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/idTVPriceSneaker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/idTVNameSneaker"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:padding="5dp"
+                android:text="$300"
+                android:textColor="@color/teal_700"
+                android:textSize="20sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/idTVPriceSneaker"
+                android:background="@color/grey_nhat2" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/CVAva"
+                android:layout_below="@id/idTVPriceSneaker"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="20dp"
+                app:cardCornerRadius="35dp">
+
+                <ImageView
+                    android:id="@+id/idIVAvaSeller"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/logo" />
+            </androidx.cardview.widget.CardView>
+            <TextView
+                android:id="@+id/idTVNameSeller"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/idTVPriceSneaker"
+                android:layout_toEndOf="@id/CVAva"
+                android:layout_marginTop="10dp"
+                android:padding="2dp"
+                android:text=" Dang Viet"
+                android:textColor="@color/black"
+                android:textSize="16sp"/>
+            <TextView
+                android:id="@+id/idTVAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:layout_below="@id/idTVNameSeller"
+                android:layout_toEndOf="@id/CVAva"
+                android:text="Da Nang City"
+                android:textSize="14sp"
+                app:drawableLeftCompat="@drawable/ic_outline_location_on_16" />
+            <TextView
+                android:id="@+id/idTVProducts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:layout_below="@id/idTVAddress"
+                android:layout_toEndOf="@id/CVAva"
+                android:text=" 100 Product"
+                android:textColor="@color/black"
+                android:textSize="14sp"/>
+            <LinearLayout
+                android:id="@+id/idLnLBtnShop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/idTVPriceSneaker"
+                android:layout_alignParentRight="true"
+                android:layout_margin="5dp"
+                android:paddingEnd="5dp"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/idBtnViewShop"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:strokeColor="@color/teal_200"
+                    style="?attr/materialButtonOutlinedStyle"
+                    app:icon="@drawable/ic_outline_remove_red_eye_16"
+                    app:iconGravity="textStart"
+                    android:text="View shop"
+                    android:textSize="13sp"
+                    android:textAllCaps="false"/>
+
+                <Button
+                    android:id="@+id/idBtnChatShop"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:strokeColor="@color/teal_200"
+                    style="?attr/materialButtonOutlinedStyle"
+                    app:icon="@drawable/ic_outline_chat_16"
+                    app:iconGravity="textStart"
+                    android:text="Chat now"
+                    android:textSize="13sp"
+                    android:textAllCaps="false"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/idLnLBtnShop"
+                android:layout_marginTop="5dp"
+                android:background="@color/grey_nhat2" />
+
+            <TextView
+                android:id="@+id/idTVProductDetail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Product Detail"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_below="@id/idLnLBtnShop"
+                android:layout_margin="10dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"/>
+            <View
+                android:layout_below="@id/idTVProductDetail"
+                android:layout_width="match_parent"
+                android:layout_marginTop="2dp"
+                android:layout_height="1dp"
+                android:background="@color/grey_nhat2"/>
+
+            <GridLayout
+                android:id="@+id/idGLDetail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/idTVProductDetail"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:columnCount="2">
+
+                <TextView
+                    android:layout_marginEnd="50dp"
+                    android:layout_marginBottom="5dp"
+                    android:padding="5dp"
+                    android:text="Quantity"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/idTVQuantity"
+                    android:text="100"
+                    android:textColor="@color/black"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:layout_marginBottom="5dp"
+                    android:padding="5dp"
+                    android:text="Brand"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/idTVBrand"
+                    android:text="Nike"
+                    android:textColor="@color/black"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:layout_marginBottom="5dp"
+                    android:padding="5dp"
+                    android:text="Category"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/idTVCategory"
+                    android:text="Basketball"
+                    android:textColor="@color/black"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:layout_marginBottom="5dp"
+                    android:padding="5dp"
+                    android:text="Version"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/idTVVersion"
+                    android:text="2022"
+                    android:textColor="@color/black"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:layout_marginBottom="5dp"
+                    android:padding="5dp"
+                    android:text="Ship from"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/idTVAddressDetail"
+                    android:text="100"
+                    android:textColor="@color/black"
+                    android:textSize="17sp" />
+            </GridLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/idGLDetail"
+                android:layout_marginTop="2dp"
+                android:background="@color/grey_nhat2" />
+
+            <TextView
+                android:id="@+id/idTVDetailProduct"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/idGLDetail"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="abcdasdjas\nasldjasd\naksdjlakd\n"
+                android:textSize="17sp" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/idTVClose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="X"
+        android:textColor="@color/grey_nhat2"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="10dp"/>
+
+    <LinearLayout
+        android:id="@+id/idLnLBtn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/logo"
+            />
+        <Button
+            android:id="@+id/idBtnAddCart"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Add to cart"
+            android:textSize="16sp"
+            android:textColor="@color/teal_700"
+            android:textAllCaps="false"
+            app:icon="@drawable/ic_baseline_add_shopping_cart_24"
+            app:iconTint="@color/teal_700"
+            app:iconGravity="textStart"
+            android:background="@color/grey_nhat1"
+            android:layout_weight="2"/>
+        <Button
+            android:id="@+id/idBtnBuyNow"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Buy it now"
+            android:textSize="16sp"
+            android:textAllCaps="false"
+            app:icon="@drawable/ic_outline_monetization_on_24"
+            app:iconGravity="textStart"
+            android:background="@color/teal_700"
+            android:layout_weight="3"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

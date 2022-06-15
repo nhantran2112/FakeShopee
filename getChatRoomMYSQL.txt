@@ -1,0 +1,8 @@
+With chatroom_cte AS (
+	SELECT * from chatroom WHERE chatroom.account = 'ngan'
+)
+SELECT chatroom_cte.id_room , chatroom.account , name , avatar  
+FROM chatroom_cte 
+	INNER JOIN chatroom on chatroom_cte.id_room = chatroom.id_room 
+	INNER join user on chatroom.account = user.account 
+WHERE chatroom.account <> 'ngan'  

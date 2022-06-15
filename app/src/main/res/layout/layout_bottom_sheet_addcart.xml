@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@color/teal_700"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Size"
+        android:textColor="@color/black"
+        android:textSize="17sp"
+        android:layout_margin="10dp"/>
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp">
+
+        <RadioGroup
+            android:id="@+id/idRGrSize"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            >
+            <RadioButton
+                android:id="@+id/RBsize36"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:text="36"
+                android:gravity="center"
+                android:button="@color/grey_nhat2"
+                android:textColor="@drawable/custom_rdbutton"
+                android:background="@drawable/custom_rdbutton_bg"
+                />
+
+            <RadioButton
+                android:id="@+id/RBsize37"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:text="37"
+                android:gravity="center"
+                android:button="@color/grey_nhat2"
+                android:textColor="@drawable/custom_rdbutton"
+                android:background="@drawable/custom_rdbutton_bg"/>
+            <RadioButton
+                android:id="@+id/RBsize38"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:text="38"
+                android:gravity="center"
+                android:button="@color/grey_nhat2"
+                android:textColor="@drawable/custom_rdbutton"
+                android:background="@drawable/custom_rdbutton_bg"/>
+            <RadioButton
+                android:id="@+id/RBsize39"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:text="39"
+                android:gravity="center"
+                android:button="@color/grey_nhat2"
+                android:textColor="@drawable/custom_rdbutton"
+                android:background="@drawable/custom_rdbutton_bg"/>
+            <RadioButton
+                android:id="@+id/RBsize40"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:text="40"
+                android:gravity="center"
+                android:button="@color/grey_nhat2"
+                android:textColor="@drawable/custom_rdbutton"
+                android:background="@drawable/custom_rdbutton_bg"/>
+            <RadioButton
+                android:id="@+id/RBsize41"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:text="41"
+                android:gravity="center"
+                android:button="@color/grey_nhat2"
+                android:textColor="@drawable/custom_rdbutton"
+                android:background="@drawable/custom_rdbutton_bg"
+                />
+            <RadioButton
+                android:id="@+id/RBsize42"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:text="42"
+                android:gravity="center"
+                android:button="@color/grey_nhat2"
+                android:textColor="@drawable/custom_rdbutton"
+                android:background="@drawable/custom_rdbutton_bg"
+                />
+            <RadioButton
+                android:id="@+id/RBsize43"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:text="43"
+                android:gravity="center"
+                android:button="@color/grey_nhat2"
+                android:textColor="@drawable/custom_rdbutton"
+                android:background="@drawable/custom_rdbutton_bg"
+                />
+            <RadioButton
+                android:id="@+id/RBsize44"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:text="44"
+                android:gravity="center"
+                android:button="@color/grey_nhat2"
+                android:textColor="@drawable/custom_rdbutton"
+                android:background="@drawable/custom_rdbutton_bg"
+                />
+
+        </RadioGroup>
+
+    </HorizontalScrollView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey_nhat2"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Color"
+        android:textColor="@color/black"
+        android:textSize="17sp"
+        android:layout_margin="10dp"/>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp">
+
+        <RadioGroup
+            android:id="@+id/idRGrColor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            >
+
+
+        </RadioGroup>
+
+    </HorizontalScrollView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey_nhat2"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_margin="10dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Quantity"
+            android:textColor="@color/black"
+            android:textSize="17sp"
+            />
+
+        <Button
+            android:id="@+id/idBtnUp"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:text="-"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/grey_nhat1"/>
+        <EditText
+            android:id="@+id/idETQuantity"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:text="1"
+            android:gravity="center"
+            android:backgroundTint="@color/grey"/>
+        <Button
+            android:id="@+id/idBtnDown"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:text="+"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/grey_nhat1"/>
+    </LinearLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/idBtnConfirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add to cart"
+        android:textSize="16sp"
+        android:textColor="@color/teal_700"
+        android:textAllCaps="false"
+        app:icon="@drawable/ic_baseline_add_shopping_cart_24"
+        app:iconTint="@color/teal_700"
+        app:iconGravity="textStart"
+        android:background="@color/grey_nhat1" />
+
+
+
+</LinearLayout>
