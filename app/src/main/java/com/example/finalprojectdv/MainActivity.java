@@ -98,4 +98,6 @@ public class MainActivity extends AppCompatActivity {
         transaction.commit(); // commit() performs the action
     }
 
+    //First commit
+    //Second commit
 }
